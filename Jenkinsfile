@@ -6,6 +6,8 @@ pipeline {
         string(name: 'PROJECT', defaultValue: '', description: 'Project Name')
         choice(name: 'ENVIRONMENT', choices: ['Dev', 'Test', 'stage', 'Uat', 'Sit', 'Prod'], description: 'Environment')
         choice(name: 'LOCATION', choices: ['westeurope', 'northeurope', 'eastus', 'Australia East', 'Australia Southeast'], description: 'Location')
+
+        booleanParam(name: 'Delete', defaultValue: 'false', description: '')
       
     }
     environment {
