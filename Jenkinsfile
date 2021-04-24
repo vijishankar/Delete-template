@@ -13,7 +13,7 @@ pipeline {
         booleanParam(name: 'All', defaultValue: false, description: 'Deploy all resrouces')
 	    
 	    
-	booleanParam(name: 'Delete', defaultValue: 'false', description: '')    
+	booleanParam(name: 'Delete', defaultValue: 'false', description: 'Toggel to delete')    
     }
     environment {
         AZURE_CLIENT_ID = credentials('AZURE_CLIENT_ID')
